@@ -1,0 +1,9 @@
+hp = 1;
+max_hp = 1;
+spd = 1.6 + oGC.wave * 0.12;
+score_val = 8;
+xp_val = 2;
+flash_t = 0;
+zigzag = 0;
+zigzag_dir = choose(-1, 1);
+bdmg = 8;

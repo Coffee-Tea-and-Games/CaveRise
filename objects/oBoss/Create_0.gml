@@ -1,0 +1,10 @@
+hp = 50 + oGC.wave * 5;
+max_hp = hp;
+spd = 0.5;
+score_val = 500;
+xp_val = 200;
+flash_t = 0;
+phase_timer = 0;
+dir_x = choose(-1, 1);
+weakpoint_x = x;
+weakpoint_y = y;

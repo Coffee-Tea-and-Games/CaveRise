@@ -1,6 +1,20 @@
-var spd = 4;
+x = oCannonBase.x;
+y = oCannonBase.y;
 
-if (keyboard_check(vk_left))  x -= spd;
-if (keyboard_check(vk_right)) x += spd;
+if (keyboard_check(ord("Z"))) tilt = clamp(tilt - 1.5, -70, 70);
+if (keyboard_check(ord("C"))) tilt = clamp(tilt + 1.5, -70, 70);
 
-x = clamp(x, room_width/2 - 300, room_width/2 + 300);
+if (fire_cool > 0) fire_cool--;
+
+if (keyboard_check(ord("X")) && fire_cool == 0) {
+    fire_cool = 20;
+    var aim = tilt + 90;
+    var mx = x + lengthdir_x(60, aim);
+    var my = y + lengthdir_y(60, aim);
+    var b = instance_create_layer(mx, my, "Projectiles", oBullet);
+    b.bdir = aim;
+    b.bspd = 12;
+    b.bdmg = 1;
+    b.bbounce = 3;
+    b.btype = 1;
+}

@@ -1,0 +1,16 @@
+draw_set_color((flash_t>0) ? c_red : make_color_rgb(100,60,140));
+draw_circle(x, y, 30, false);
+draw_set_color(make_color_rgb(60,30,100));
+draw_circle(x, y, 22, false);
+draw_set_color(make_color_rgb(0,255,220));
+draw_circle(weakpoint_x, weakpoint_y, 8, false);
+var bw = 80;
+draw_set_color(c_red);
+draw_rectangle(x-bw/2, y-46, x+bw/2, y-38, false);
+draw_set_color(c_lime);
+draw_rectangle(x-bw/2, y-46, x-bw/2+bw*(hp/max_hp), y-38, false);
+draw_set_font(fnt_small);
+draw_set_halign(fa_center);
+draw_set_color(c_yellow);
+draw_text(x, y-56, "! BOSS !");
+draw_set_color(c_white);

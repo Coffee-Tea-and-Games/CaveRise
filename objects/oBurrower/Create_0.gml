@@ -1,0 +1,11 @@
+hp = 3;
+max_hp = 3;
+emerge_timer = 60;
+emerged = false;
+snap_timer = 0;
+score_val = 20;
+xp_val = 25;
+flash_t = 0;
+x = oCannonBase.x + random_range(-120, 120);
+y = 650;
+depth = -2;

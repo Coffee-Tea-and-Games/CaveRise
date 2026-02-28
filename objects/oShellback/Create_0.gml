@@ -1,0 +1,9 @@
+hp = 6 + oGC.wave;
+max_hp = hp;
+spd = 0.35 + oGC.wave * 0.03;
+score_val = 25;
+xp_val = 3;
+flash_t = 0;
+bdmg = 15;
+btype = 1;
+bmult = 1.0;

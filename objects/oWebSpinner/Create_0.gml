@@ -1,0 +1,9 @@
+hp = 2;
+max_hp = 2;
+spd = 0.4 + oGC.wave * 0.03;
+score_val = 15;
+xp_val = 2;
+flash_t = 0;
+web_timer = 0;
+web_interval = 160;
+bdmg = 8;

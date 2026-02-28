@@ -1,0 +1,9 @@
+hp = 3 + oGC.wave;
+max_hp = hp;
+spd = 0.7 + oGC.wave * 0.08;
+score_val = 10;
+xp_val = 2;
+flash_t = 0;
+bdmg = 10;
+dir_drift = random_range(-0.4, 0.4);
+bdmg = 10;
