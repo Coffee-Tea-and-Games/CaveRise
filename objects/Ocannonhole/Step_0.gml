@@ -16,8 +16,3 @@ x += x_speed;
 
 y += y_speed;
 
-if (keyboard_check_pressed(vk_space)) {
-    var b = instance_create_layer(x, y, "Instances", Ocannonball);
-    b.direction = image_angle;
-    b.speed = 8;
-}

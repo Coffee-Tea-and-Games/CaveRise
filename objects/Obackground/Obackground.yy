@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Ocannonball",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obackground",
+  "eventList":[],
   "managed":true,
-  "name":"Ocannonball",
+  "name":"Obackground",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Scannonball",
-    "path":"sprites/Scannonball/Scannonball.yy",
+    "name":"Sbackground",
+    "path":"sprites/Sbackground/Sbackground.yy",
   },
   "spriteMaskId":null,
   "visible":true,

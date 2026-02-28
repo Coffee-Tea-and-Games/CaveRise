@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Ocannonball",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Owhite",
+  "eventList":[],
   "managed":true,
-  "name":"Ocannonball",
+  "name":"Owhite",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Scannonball",
-    "path":"sprites/Scannonball/Scannonball.yy",
+    "name":"Swhite",
+    "path":"sprites/Swhite/Swhite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
