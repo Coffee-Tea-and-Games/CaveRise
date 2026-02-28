@@ -1,18 +1,6 @@
+var spd = 4;
 
+if (keyboard_check(vk_left))  x -= spd;
+if (keyboard_check(vk_right)) x += spd;
 
-x_speed = 0; // reset horizontal speed 
-
-if keyboard_check(vk_right) { // if the right arrow key is pressed
-
-    x_speed = movement_speed; // set the horizontal speed to heidi's movement_speed
-
-} else if keyboard_check(vk_left) { // otherwise, if the left arrow key is pressed
-
-    x_speed = -movement_speed; // set the horizontal speed to negative heidi's movement_speed, making her move left
-
-}
-
-x += x_speed; 
-
-y += y_speed;
-
+x = clamp(x, room_width/2 - 300, room_width/2 + 300);
