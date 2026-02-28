@@ -1,5 +1,5 @@
 x = oCannonBase.x;
-y = oCannonBase.y;
+y = oCannonBase.y + 60;
 
 if (keyboard_check(ord("Z"))) tilt = clamp(tilt - 1.5, -70, 70);
 if (keyboard_check(ord("C"))) tilt = clamp(tilt + 1.5, -70, 70);

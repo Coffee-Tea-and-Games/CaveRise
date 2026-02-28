@@ -51,6 +51,7 @@
     {"id":{"name":"Scannonball","path":"sprites/Scannonball/Scannonball.yy",},},
     {"id":{"name":"Scannonbase","path":"sprites/Scannonbase/Scannonbase.yy",},},
     {"id":{"name":"Scannonhole","path":"sprites/Scannonhole/Scannonhole.yy",},},
+    {"id":{"name":"sGC","path":"sprites/sGC/sGC.yy",},},
     {"id":{"name":"Srail","path":"sprites/Srail/Srail.yy",},},
     {"id":{"name":"sStart","path":"sprites/sStart/sStart.yy",},},
     {"id":{"name":"sTitleScreen","path":"sprites/sTitleScreen/sTitleScreen.yy",},},
