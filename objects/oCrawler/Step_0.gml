@@ -4,12 +4,10 @@ y += spd;
 x += dir_drift;
 x = clamp(x, 365, 979);
 if (y > 700) {
-    if (gc.inv_timer <= 0) {
-        gc.hp -= bdmg;
-        gc.inv_timer = 80;
-        gc.shake = 10;
-        if (gc.hp <= 0) gc.game_over = true;
-    }
+    gc.hp -= 10;
+    gc.inv_timer = 80;
+    gc.shake = 10;
+    if (gc.hp <= 0) gc.game_over = true;
     instance_destroy(); exit;
 }
 if (hp <= 0) { instance_destroy(); exit; }

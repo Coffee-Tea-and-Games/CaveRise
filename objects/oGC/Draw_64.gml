@@ -11,7 +11,7 @@ draw_set_color(c_lime);
 draw_rectangle(16, 40, 16 + 200*(hp/max_hp), 56, false);
 draw_set_color(c_white);
 draw_set_font(fnt_small);
-draw_text(16, 58, "HP: " + string(oCannonBase.hp) + "/" + string(max_hp));
+draw_text(16, 58, "HP: " + string(hp) + "/" + string(max_hp));
 var bw = 250;
 var bx = gw/2 - bw/2;
 draw_set_color(make_color_rgb(30,30,30));
@@ -37,7 +37,7 @@ if (game_over) {
     draw_text(gw/2, gh/2-50, "GAME OVER");
     draw_set_font(fnt_main);
     draw_set_color(c_white);
-    draw_text(gw/2, gh/2+10, "Score: " + string(oGC.oreo));
+    draw_text(gw/2, gh/2+10, "Thanks for playing!");
     draw_set_font(fnt_small);
     draw_set_color(make_color_rgb(160,160,160));
     draw_text(gw/2, gh/2+44, "ENTER to Title");
@@ -53,7 +53,7 @@ if (game_won) {
     draw_text(gw/2, gh/2-50, "VICTORY!");
     draw_set_font(fnt_main);
     draw_set_color(c_white);
-    draw_text(gw/2, gh/2+10, "Score: " + string(oGC.oreo));
+    draw_text(gw/2, gh/2+10, "The Blood Goddess is defeated!");
     draw_set_font(fnt_small);
     draw_set_color(make_color_rgb(160,160,160));
     draw_text(gw/2, gh/2+44, "ENTER to Title");

@@ -44,8 +44,8 @@ with (oWebSpinner) {
 }
 with (oBoss) {
     if (distance_to_object(other) < 30) {
-        hp--;
-        if (hp <= 0) {
+        other.hp--;
+        if (other.hp <= 0) {
             oGC.game_won = true;
             instance_destroy(other);
         }
