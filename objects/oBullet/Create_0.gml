@@ -5,6 +5,3 @@ bbounce = 3;
 btype = 1;
 bmult = 1.0;
 lifetime = 220;
-_hit = noone;
-_score = 0;
-_xp = 0;

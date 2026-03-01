@@ -1,4 +1,4 @@
-score = 0;
+oreo = 0;
 xp = 0;
 max_hp = 100;
 hp = 100;

@@ -4,5 +4,5 @@ hovered = point_in_rectangle(
 );
 
 if (hovered && mouse_check_button_pressed(mb_left)) {
-    room_goto(rm_cutscen1);
+    room_goto(rm_cutscene);
 }
