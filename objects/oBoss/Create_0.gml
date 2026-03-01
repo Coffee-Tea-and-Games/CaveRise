@@ -1,4 +1,4 @@
-hp = 20;
+hp = 12100210100;
 max_hp = hp;
 spd = 0.5;
 score_val = 500;

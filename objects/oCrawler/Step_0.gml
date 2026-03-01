@@ -4,7 +4,9 @@ y += spd;
 x += dir_drift;
 x = clamp(x, 365, 979);
 if (y > 700) {
-    gc.hp -= 10;
+    with(oGC){
+		hp -= 10;
+	}
     gc.inv_timer = 80;
     gc.shake = 10;
     if (gc.hp <= 0) gc.game_over = true;

@@ -4,7 +4,7 @@ draw_set_font(fnt_main);
 draw_set_halign(fa_center);
 draw_set_color(c_white);
 draw_text(gw/2, 10, "WAVE " + string(wave));
-draw_set_halign(fa_left);
+draw_set_halign(fa_center);
 draw_set_color(make_color_rgb(60,0,0));
 draw_rectangle(16, 40, 216, 56, false);
 draw_set_color(c_lime);
@@ -14,35 +14,9 @@ draw_set_font(fnt_small);
 draw_text(16, 58, "HP: " + string(hp) + "/" + string(max_hp));
 var bw = 250;
 var bx = gw/2 - bw/2;
-draw_set_color(make_color_rgb(30,30,30));
-draw_rectangle(bx, gh-22, bx+bw, gh-8, false);
-draw_set_color(make_color_rgb(60,210,90));
-draw_rectangle(bx, gh-22, bx + bw*clamp(xp/xp_next,0,1), gh-8, false);
-draw_set_color(c_white);
-draw_set_halign(fa_center);
-draw_text(gw/2, gh-34, "LVL " + string(plr_level));
-draw_set_halign(fa_right);
+
 var sname;
-if (shot_type == 1) { sname = "STANDARD"; } else if (shot_type == 2) { sname = "HEAVY"; } else { sname = "SCATTER"; }
-draw_set_color(make_color_rgb(180,220,255));
-draw_text(gw-16, 10, "[ " + sname + " ]  1/2/3");
-if (game_over) {
-    draw_set_alpha(0.8);
-    draw_set_color(c_black);
-    draw_rectangle(0, 0, gw, gh, false);
-    draw_set_alpha(1);
-    draw_set_font(fnt_title);
-    draw_set_halign(fa_center);
-    draw_set_color(c_red);
-    draw_text(gw/2, gh/2-50, "GAME OVER");
-    draw_set_font(fnt_main);
-    draw_set_color(c_white);
-    draw_text(gw/2, gh/2+10, "Thanks for playing!");
-    draw_set_font(fnt_small);
-    draw_set_color(make_color_rgb(160,160,160));
-    draw_text(gw/2, gh/2+44, "ENTER to Title");
-}
-if (game_won) {
+if (game_won = true) {
     draw_set_alpha(0.8);
     draw_set_color(c_black);
     draw_rectangle(0, 0, gw, gh, false);

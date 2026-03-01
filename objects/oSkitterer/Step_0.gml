@@ -7,7 +7,7 @@ x += zigzag_dir * 2.8;
 x = clamp(x, 365, 979);
 if (y > 700) {
     if (gc.inv_timer <= 0) {
-        gc.hp -= 10;
+        oGC.hp -= 10;
         gc.inv_timer = 80;
         gc.shake = 8;
         if (gc.hp <= 0) gc.game_over = true;
