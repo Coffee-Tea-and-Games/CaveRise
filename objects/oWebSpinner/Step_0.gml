@@ -9,7 +9,7 @@ if (web_timer >= web_interval) {
 x = clamp(x, 365, 979);
 if (y > 700) {
     if (gc.inv_timer <= 0) {
-        gc.hp -= bdmg;
+        gc.hp -= 10;
         gc.inv_timer = 80;
         gc.shake = 8;
         if (gc.hp <= 0) gc.game_over = true;

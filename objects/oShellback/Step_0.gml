@@ -3,7 +3,7 @@ if (gc.game_over || gc.game_won) exit;
 y += spd;
 if (y > 700) {
     if (gc.inv_timer <= 0) {
-        gc.hp -= bdmg;
+        gc.hp -= 10;
         gc.inv_timer = 80;
         gc.shake = 12;
         if (gc.hp <= 0) gc.game_over = true;

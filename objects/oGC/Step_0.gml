@@ -49,13 +49,7 @@ if (spawned >= enemies_to_spawn && alive == 0 && !boss_alive) {
     }
     shake = 8;
 }
-if (xp >= xp_next) {
-    xp -= xp_next;
-    plr_level++;
-    xp_next = 100 + plr_level * 50;
-    if (plr_level == 3) shot_unlocked[1] = true;
-    if (plr_level == 6) shot_unlocked[2] = true;
-}
+
 if (game_won) exit;	
 if (hp <= 0 && !game_over) { game_over = true; shake = 20; }
 cat_in_web = false;
