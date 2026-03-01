@@ -7,7 +7,7 @@ if (keyboard_check(ord("Z"))) tilt = clamp(tilt + 1.5, -70, 70);
 if (fire_cool > 0) fire_cool--;
 
 if (keyboard_check(ord("X")) && fire_cool == 0) {
-    fire_cool = 20;
+    fire_cool = 40;
     var aim = tilt + 90;
     var mx = x + lengthdir_x(60, aim);
     var my = y + lengthdir_y(60, aim);
