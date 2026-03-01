@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sBoss",
+    "path":"sprites/sBoss/sBoss.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

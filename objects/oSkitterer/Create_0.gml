@@ -6,4 +6,6 @@ xp_val = 2;
 flash_t = 0;
 zigzag = 0;
 zigzag_dir = choose(-1, 1);
-bdmg = 8;
+contact_damage = 10;
+sprite_index = sSkittler;
+image_speed = 0.15;

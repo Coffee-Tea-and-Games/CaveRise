@@ -6,6 +6,7 @@ if (web_timer >= web_interval) {
     web_timer = 0;
     instance_create_layer(x, y, "Hazards", oWebZone);
 }
+x = clamp(x, 365, 979);
 if (y > 700) {
     if (gc.inv_timer <= 0) {
         gc.hp -= bdmg;

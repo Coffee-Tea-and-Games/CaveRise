@@ -1,12 +1,11 @@
-oreo = 0;
 xp = 0;
 max_hp = 100;
 hp = 100;
 wave = 1;
-enemies_to_spawn = 6;
+enemies_to_spawn = 10;
 spawned = 0;
 spawn_timer = 0;
-spawn_delay = 80;
+spawn_delay = 60;
 xp_next = 100;
 plr_level = 1;
 inv_timer = 0;

@@ -7,3 +7,5 @@ flash_t = 0;
 web_timer = 0;
 web_interval = 160;
 bdmg = 8;
+sprite_index = sWebSpinner;
+image_speed = 0.15;

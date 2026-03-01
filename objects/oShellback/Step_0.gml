@@ -16,3 +16,4 @@ if (hp <= 0) {
     instance_destroy(); exit;
 }
 if (flash_t > 0) { flash_t--; image_blend = c_red; } else { image_blend = c_white; }
+x = clamp(x, 365, 979);

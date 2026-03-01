@@ -3,7 +3,7 @@ var gh = display_get_gui_height();
 draw_set_font(fnt_main);
 draw_set_halign(fa_center);
 draw_set_color(c_white);
-draw_text(gw/2, 10, "WAVE " + string(wave) + " SCORE " + string(oGC.oreo));
+draw_text(gw/2, 10, "WAVE " + string(wave));
 draw_set_halign(fa_left);
 draw_set_color(make_color_rgb(60,0,0));
 draw_rectangle(16, 40, 216, 56, false);

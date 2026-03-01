@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sSkittler",
+    "path":"sprites/sSkittler/sSkittler.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

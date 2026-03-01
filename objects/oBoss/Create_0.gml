@@ -1,4 +1,4 @@
-hp = 50 + oGC.wave * 5;
+hp = 20;
 max_hp = hp;
 spd = 0.5;
 score_val = 500;
@@ -8,3 +8,5 @@ phase_timer = 0;
 dir_x = choose(-1, 1);
 weakpoint_x = x;
 weakpoint_y = y;
+sprite_index = sBoss;
+image_speed = 0.15;
