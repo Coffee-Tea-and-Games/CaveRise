@@ -42,6 +42,7 @@ if (spawned >= enemies_to_spawn && alive == 0 && !boss_alive) {
     spawned = 0;
     enemies_to_spawn = 5 + wave * 2;
     spawn_delay = max(25, 80 - wave * 5);
+    hp = min(max_hp, hp + 10);
     if (wave mod 8 == 0) {
         instance_create_layer(683, spawn_y, "Enemies", oBoss);
         boss_alive = true;
@@ -55,5 +56,7 @@ if (xp >= xp_next) {
     if (plr_level == 3) shot_unlocked[1] = true;
     if (plr_level == 6) shot_unlocked[2] = true;
 }
-if (hp <= 0 && !game_over) { game_over = true; shake = 20; }	
+if (game_won) exit;	
+if (hp <= 0 && !game_over) { game_over = true; shake = 20; }
 cat_in_web = false;
+
